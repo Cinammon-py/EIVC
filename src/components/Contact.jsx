@@ -13,8 +13,8 @@ export default function Contact() {
 
   const contactInfo = [
     { icon: MdPhone, label: "Phone", value: "+250 788 302 512" },
-    { icon: MdEmail, label: "Email", value: "info@ecivc.rw" },
-    { icon: MdLocationOn, label: "Location", value: "Gasabo, Remera, Kigali City, Rwanda" },
+    { icon: MdEmail, label: "Email", value: "info@ecivcltd.com" },
+    { icon: MdLocationOn, label: "Location", value: "Remera, Kigali City, Rwanda" },
   ];
 
   const onSubmit = (data) => {
