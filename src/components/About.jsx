@@ -1,4 +1,8 @@
 import React from 'react';
+import { GiPlantRoots } from 'react-icons/gi';
+import { HiLightBulb } from 'react-icons/hi';
+import { MdOutlineVerified } from 'react-icons/md';
+
 
 const About = () => {
   // Brand colors
@@ -10,16 +14,16 @@ const About = () => {
   };
 
   const stats = [
-    { number: "50+", label: "Projects Completed"  },
+    { number: "50+", label: "Projects Completed" },
     { number: "15+", label: "Years Experience" },
-    { number: "100%", label: "Client Satisfaction"},
-    { number: "24/7", label: "Support Available"}
+    { number: "100%", label: "Client Satisfaction" },
+    { number: "24/7", label: "Support Available" }
   ];
 
   const values = [
-    { title: "Sustainability", description: "Environmental stewardship in every project", icon: "🌱" },
-    { title: "Innovation", description: "Cutting-edge construction methodologies", icon: "💡" },
-    { title: "Quality", description: "Uncompromising standards of excellence", icon: "🎯" }
+    { title: "Sustainability", description: "Environmental stewardship in every project", icon: GiPlantRoots },
+    { title: "Innovation", description: "Cutting-edge construction methodologies", icon: HiLightBulb },
+    { title: "Quality", description: "Uncompromising standards of excellence", icon: MdOutlineVerified },
   ];
 
   return (
@@ -157,18 +161,18 @@ const About = () => {
 
       <section id="about" className="py-24 bg-white relative overflow-hidden">
         {/* Background decorative elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 opacity-5" style={{backgroundColor: colors.forestGreen, borderRadius: '50%', transform: 'translate(50%, -50%)'}}></div>
-        <div className="absolute bottom-0 left-0 w-64 h-64 opacity-5" style={{backgroundColor: colors.amber, borderRadius: '50%', transform: 'translate(-50%, 50%)'}}></div>
+        <div className="absolute top-0 right-0 w-96 h-96 opacity-5" style={{ backgroundColor: colors.forestGreen, borderRadius: '50%', transform: 'translate(50%, -50%)' }}></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 opacity-5" style={{ backgroundColor: colors.amber, borderRadius: '50%', transform: 'translate(-50%, 50%)' }}></div>
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
           {/* Section Header */}
           <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="font-heading text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{color: colors.forestGreen}}>
+            <h2 className="font-heading text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ color: colors.forestGreen }}>
               Building Rwanda's
               <span className="block text-gradient">Sustainable Future</span>
             </h2>
-            <p className="font-body text-xl leading-relaxed max-w-3xl mx-auto" style={{color: colors.charcoal}}>
-              Environment Innovation Value Chain (E.I.V.C) Ltd leads Rwanda's construction industry 
+            <p className="font-body text-xl leading-relaxed max-w-3xl mx-auto" style={{ color: colors.charcoal }}>
+              Environmental & Construction Innovation Value Chain (E.C.I.V.C) Ltd leads Rwanda's construction industry
               with innovative, sustainable solutions that preserve our environment while building tomorrow's infrastructure.
             </p>
           </div>
@@ -179,62 +183,55 @@ const About = () => {
             <div className="relative animate-fade-in-left">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 {/* Placeholder for construction image */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center text-4xl" style={{backgroundColor: colors.forestGreen}}>
-                      🏗️
-                    </div>
-                    <p className="font-body text-lg font-medium" style={{color: colors.charcoal}}>
-                      Professional Construction Excellence
-                    </p>
-                  </div>
-                </div>
+                <img
+                  src="/tolu-olubode-PlBsJ5MybGc-unsplash.jpg"
+                  alt="Construction site"
+                  className="w-full aspect-[4/3] object-cover"
+                />
+
                 {/* Decorative overlay */}
-                <div className="absolute top-6 left-6 w-16 h-16 rounded-xl section-accent opacity-90 flex items-center justify-center text-white text-2xl">
-                  🌱
+                <div className="absolute top-6 left-6 w-14 h-14 rounded-xl section-accent opacity-95 flex items-center justify-center shadow-lg">
+                  <GiPlantRoots size={26} color="white" />
                 </div>
               </div>
               {/* Floating accent card */}
-              <div className="absolute -bottom-6 -right-6 p-6 rounded-xl shadow-xl" style={{backgroundColor: colors.amber}}>
+              <div className="absolute -bottom-6 -right-6 p-6 rounded-xl shadow-xl" style={{ backgroundColor: colors.amber }}>
                 <div className="text-center">
-                  <div className="font-heading text-2xl font-bold" style={{color: colors.forestGreen}}>15+</div>
-                  <div className="font-body text-sm font-medium" style={{color: colors.forestGreen}}>Years Excellence</div>
+                  <div className="font-heading text-2xl font-bold" style={{ color: colors.forestGreen }}>15+</div>
+                  <div className="font-body text-sm font-medium" style={{ color: colors.forestGreen }}>Years Excellence</div>
                 </div>
               </div>
             </div>
 
             {/* Content Section */}
             <div className="animate-fade-in-right">
-              <h3 className="font-heading text-3xl font-bold mb-6" style={{color: colors.forestGreen}}>
+              <h3 className="font-heading text-3xl font-bold mb-6" style={{ color: colors.forestGreen }}>
                 Leading Construction Excellence in Rwanda
               </h3>
               <div className="space-y-6 mb-8">
-                <p className="font-body text-lg leading-relaxed" style={{color: colors.charcoal}}>
-                  As Rwanda's premier construction company, E.I.V.C Ltd specializes in delivering world-class infrastructure 
-                  solutions that balance economic growth with environmental responsibility. Our comprehensive approach 
+                <p className="font-body text-lg leading-relaxed" style={{ color: colors.charcoal }}>
+                  As Rwanda's premier construction company, E.C.I.V.C Ltd specializes in delivering world-class infrastructure
+                  solutions that balance economic growth with environmental responsibility. Our comprehensive approach
                   encompasses residential, commercial, institutional, and infrastructure development projects.
                 </p>
-                <p className="font-body text-lg leading-relaxed" style={{color: colors.charcoal}}>
-                  We leverage cutting-edge technologies, sustainable building practices, and innovative project management 
+                <p className="font-body text-lg leading-relaxed" style={{ color: colors.charcoal }}>
+                  We leverage cutting-edge technologies, sustainable building practices, and innovative project management
                   methodologies to ensure exceptional quality, timely delivery, and long-term environmental stewardship.
                 </p>
               </div>
 
               {/* Featured Quote */}
-              <div className="relative p-6 rounded-xl mb-8" style={{backgroundColor: colors.beige}}>
+              <div className="relative p-6 rounded-xl mb-8" style={{ backgroundColor: colors.beige }}>
                 <div className="absolute top-0 left-0 w-1 h-full quote-decoration rounded-l-xl"></div>
                 <div className="pl-4">
-                  <p className="font-body text-lg italic leading-relaxed mb-4" style={{color: colors.charcoal}}>
-                    "We believe in building not just structures, but a sustainable future for Rwanda. Every project 
+                  <p className="font-body text-lg italic leading-relaxed mb-4" style={{ color: colors.charcoal }}>
+                    "We believe in building not just structures, but a sustainable future for Rwanda. Every project
                     is an opportunity to demonstrate our commitment to environmental stewardship and construction excellence."
                   </p>
                   <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full mr-4 flex items-center justify-center text-lg" style={{backgroundColor: colors.forestGreen}}>
-                      👨‍💼
-                    </div>
                     <div>
-                      <div className="font-body font-semibold" style={{color: colors.forestGreen}}>Murokore Eric</div>
-                      <div className="font-body text-sm" style={{color: colors.charcoal}}>Founder & Director</div>
+                      <div className="font-body font-bold" style={{ color: colors.forestGreen }}>Murokore Eric</div>
+                      <div className="font-body text-sm" style={{ color: colors.charcoal }}>Founder & Director</div>
                     </div>
                   </div>
                 </div>
@@ -250,10 +247,10 @@ const About = () => {
                 className={`stat-card p-6 rounded-xl text-center animate-scale-in animate-delay-${(index + 1) * 100}`}
               >
                 <div className="text-3xl mb-3">{stat.icon}</div>
-                <div className="font-heading text-3xl font-bold mb-2" style={{color: colors.forestGreen}}>
+                <div className="font-heading text-3xl font-bold mb-2" style={{ color: colors.forestGreen }}>
                   {stat.number}
                 </div>
-                <div className="font-body text-sm font-medium tracking-wide uppercase" style={{color: colors.charcoal}}>
+                <div className="font-body text-sm font-medium tracking-wide uppercase" style={{ color: colors.charcoal }}>
                   {stat.label}
                 </div>
               </div>
@@ -262,10 +259,10 @@ const About = () => {
 
           {/* Values Section */}
           <div className="text-center mb-12 animate-fade-in-up">
-            <h3 className="font-heading text-3xl font-bold mb-4" style={{color: colors.forestGreen}}>
+            <h3 className="font-heading text-3xl font-bold mb-4" style={{ color: colors.forestGreen }}>
               Our Core Values
             </h3>
-            <p className="font-body text-lg max-w-2xl mx-auto" style={{color: colors.charcoal}}>
+            <p className="font-body text-lg max-w-2xl mx-auto" style={{ color: colors.charcoal }}>
               The principles that guide every decision we make and every project we undertake
             </p>
           </div>
@@ -276,13 +273,14 @@ const About = () => {
                 key={value.title}
                 className={`value-card p-8 rounded-xl text-center animate-fade-in-up animate-delay-${(index + 1) * 100}`}
               >
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-2xl section-accent text-white">
-                  {value.icon}
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center section-accent text-white">
+                  <value.icon size={28} />
                 </div>
-                <h4 className="font-heading text-xl font-bold mb-3" style={{color: colors.forestGreen}}>
+
+                <h4 className="font-heading text-xl font-bold mb-3" style={{ color: colors.forestGreen }}>
                   {value.title}
                 </h4>
-                <p className="font-body leading-relaxed" style={{color: colors.charcoal}}>
+                <p className="font-body leading-relaxed" style={{ color: colors.charcoal }}>
                   {value.description}
                 </p>
               </div>

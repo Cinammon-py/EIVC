@@ -52,7 +52,7 @@ export default function Navbar() {
             darkMode ? "text-charcoal" : "text-white"
           }`}
         >
-          E.I.V.C
+          E.C.I.V.C
         </a>
         <ul className="hidden md:flex space-x-8 font-medium">
           {links.map((link) => (

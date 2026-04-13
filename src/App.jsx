@@ -5,9 +5,51 @@ import Services from "./components/Services";
 import Values from "./components/Values";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { useImagePreloader } from "./hooks/useImagePreloader";
 import './index.css'
 
+const ALL_IMAGES = [
+  '/hero-bg.jpg',
+  '/tolu-olubode-PlBsJ5MybGc-unsplash.jpg',
+  '/infra.jpg',
+  '/residential.jpg',
+  '/commercial.jpg',
+  '/institutional.jpg',
+  '/energy.jpg',
+  '/sustainable.jpg',
+];
 export default function App() {
+  const imagesLoaded = useImagePreloader(ALL_IMAGES);
+
+  if (!imagesLoaded) {
+    return (
+      <div style={{
+        position: 'fixed', inset: 0,
+        backgroundColor: '#1B4332',
+        display: 'flex', flexDirection: 'column',
+        alignItems: 'center', justifyContent: 'center',
+        gap: '20px'
+      }}>
+        <img src="/logo.jpg" alt="ECIVC" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover' }} />
+        <div style={{
+          width: 200, height: 4, backgroundColor: 'rgba(255,255,255,0.2)', borderRadius: 999, overflow: 'hidden'
+        }}>
+          <div style={{
+            height: '100%', width: '40%',
+            backgroundColor: '#FFC857',
+            borderRadius: 999,
+            animation: 'slide 1.2s ease-in-out infinite'
+          }} />
+        </div>
+        <style>{`
+          @keyframes slide {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(600%); }
+          }
+        `}</style>
+      </div>
+    );
+  }
   return (
     <>
       <Navbar />

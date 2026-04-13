@@ -12,43 +12,43 @@ const Services = () => {
   };
 
   const services = [
-    { 
-      title: "Infrastructure Development", 
+    {
+      title: "Infrastructure Development",
       desc: "Comprehensive road construction, bridge engineering, and railway networks that enhance regional connectivity and economic growth.",
       img: "/infra.jpg",
       number: "01",
       features: ["Roads & Highways", "Bridge Construction", "Railway Networks", "Urban Planning"]
     },
-    { 
-      title: "Residential Construction", 
+    {
+      title: "Residential Construction",
       desc: "Modern housing solutions from affordable family homes to luxury residential complexes that meet Rwanda's growing urban needs.",
       img: "/residential.jpg",
       number: "02",
       features: ["Affordable Housing", "Luxury Complexes", "Gated Communities", "Urban Development"]
     },
-    { 
-      title: "Commercial Construction", 
+    {
+      title: "Commercial Construction",
       desc: "Strategic commercial spaces including office buildings, retail centers, and hospitality facilities that drive business growth.",
       img: "/commercial.jpg",
       number: "03",
       features: ["Office Buildings", "Shopping Centers", "Hotels & Resorts", "Industrial Facilities"]
     },
-    { 
-      title: "Institutional Construction", 
+    {
+      title: "Institutional Construction",
       desc: "Essential public infrastructure including educational facilities, healthcare centers, and government buildings that serve communities.",
       img: "/institutional.jpg",
       number: "04",
       features: ["Educational Facilities", "Healthcare Centers", "Government Buildings", "Community Centers"]
     },
-    { 
-      title: "Energy & Utilities", 
+    {
+      title: "Energy & Utilities",
       desc: "Sustainable energy solutions including solar installations, hydropower projects, and comprehensive utility infrastructure development.",
       img: "/energy.jpg",
       number: "05",
       features: ["Solar Energy Systems", "Hydropower Projects", "Water Treatment", "Utility Infrastructure"]
     },
-    { 
-      title: "Sustainable Construction", 
+    {
+      title: "Sustainable Construction",
       desc: "Environmentally responsible building practices using eco-friendly materials and energy-efficient technologies for a greener future.",
       img: "/sustainable.jpg",
       number: "06",
@@ -196,14 +196,14 @@ const Services = () => {
         }
       `}</style>
 
-      <section id="services" className="py-24 bg-texture relative" style={{backgroundColor: colors.beige}}>
+      <section id="services" className="py-24 bg-texture relative" style={{ backgroundColor: colors.beige }}>
         {/* Background decorative elements */}
         <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="font-heading text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{color: colors.forestGreen}}>
-              Our Services
-            </h2>
+          <h2 className="font-heading text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ color: colors.forestGreen }}>
+            Our Services
+          </h2>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -217,25 +217,13 @@ const Services = () => {
                 {/* Image Section */}
                 <div className="relative h-56 overflow-hidden">
                   {/* Placeholder for service image */}
-                  <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <div className="text-center">
-                      <div 
-                        className="service-icon w-16 h-16 mx-auto mb-3 rounded-full flex items-center justify-center text-3xl"
-                        style={{backgroundColor: colors.forestGreen, color: 'white'}}
-                      >
-                        {index === 0 && '🏗️'}
-                        {index === 1 && '🏠'}
-                        {index === 2 && '🏢'}
-                        {index === 3 && '🏥'}
-                        {index === 4 && '⚡'}
-                        {index === 5 && '🌱'}
-                      </div>
-                      <p className="font-body text-sm font-medium" style={{color: colors.charcoal}}>
-                        {service.title}
-                      </p>
-                    </div>
-                  </div>
-                  
+                  <img
+                    src={service.img}
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                  />
+
+
                   {/* Service Number */}
                   <div className="service-number absolute top-4 left-4 w-12 h-12 rounded-full flex items-center justify-center text-white font-heading font-bold text-lg">
                     {service.number}
@@ -253,30 +241,30 @@ const Services = () => {
                 {/* Content Section */}
                 <div className="p-6 relative">
                   <div className="mb-4">
-                    <h3 className="font-heading text-xl font-bold mb-3 leading-tight" style={{color: colors.forestGreen}}>
+                    <h3 className="font-heading text-xl font-bold mb-3 leading-tight" style={{ color: colors.forestGreen }}>
                       {service.title}
                     </h3>
-                    <p className="font-body leading-relaxed" style={{color: colors.charcoal}}>
+                    <p className="font-body leading-relaxed" style={{ color: colors.charcoal }}>
                       {service.desc}
                     </p>
                   </div>
 
                   {/* Feature List - appears on hover */}
                   <div className="feature-list">
-                    <div className="border-t pt-4" style={{borderColor: colors.beige}}>
-                      <h4 className="font-body font-semibold text-sm mb-3 uppercase tracking-wide" style={{color: colors.forestGreen}}>
+                    <div className="border-t pt-4" style={{ borderColor: colors.beige }}>
+                      <h4 className="font-body font-semibold text-sm mb-3 uppercase tracking-wide" style={{ color: colors.forestGreen }}>
                         Key Services:
                       </h4>
                       <div className="grid grid-cols-2 gap-2">
                         {service.features.map((feature, featureIndex) => (
-                          <div 
+                          <div
                             key={feature}
                             className={`flex items-center text-sm font-body animate-slide-in-right animate-delay-${(featureIndex + 1) * 100}`}
-                            style={{color: colors.charcoal}}
+                            style={{ color: colors.charcoal }}
                           >
-                            <div 
+                            <div
                               className="w-2 h-2 rounded-full mr-2 flex-shrink-0"
-                              style={{backgroundColor: colors.amber}}
+                              style={{ backgroundColor: colors.amber }}
                             ></div>
                             <span className="leading-tight">{feature}</span>
                           </div>
@@ -286,10 +274,10 @@ const Services = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <div className="mt-6 pt-4 border-t" style={{borderColor: colors.beige}}>
-                    <button 
+                  <div className="mt-6 pt-4 border-t" style={{ borderColor: colors.beige }}>
+                    <button
                       className="font-body text-sm font-semibold uppercase tracking-wide transition-all duration-300 hover:underline"
-                      style={{color: colors.forestGreen}}
+                      style={{ color: colors.forestGreen }}
                     >
                       Learn More →
                     </button>
@@ -301,17 +289,17 @@ const Services = () => {
 
           {/* Bottom CTA Section */}
           <div className="text-center mt-16 animate-fade-in-up">
-            <div className="inline-block p-8 rounded-2xl" style={{backgroundColor: 'white'}}>
-              <h3 className="font-heading text-2xl font-bold mb-4" style={{color: colors.forestGreen}}>
+            <div className="inline-block p-8 rounded-2xl" style={{ backgroundColor: 'white' }}>
+              <h3 className="font-heading text-2xl font-bold mb-4" style={{ color: colors.forestGreen }}>
                 Ready to Start Your Project?
               </h3>
-              <p className="font-body text-lg mb-6 max-w-2xl" style={{color: colors.charcoal}}>
-                Our expert team is ready to discuss your construction needs and provide tailored solutions 
+              <p className="font-body text-lg mb-6 max-w-2xl" style={{ color: colors.charcoal }}>
+                Our expert team is ready to discuss your construction needs and provide tailored solutions
                 that align with your vision and budget.
               </p>
-              <button 
+              <button
                 className="inline-flex items-center px-8 py-4 rounded-full font-body font-semibold text-white transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1"
-                style={{backgroundColor: colors.forestGreen}}
+                style={{ backgroundColor: colors.forestGreen }}
               >
                 <span>Get Free Consultation</span>
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
