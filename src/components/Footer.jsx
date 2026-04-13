@@ -6,12 +6,12 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10">
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
-        
+
         {/* Logo & Description */}
         <div>
           <h2 className="text-white text-2xl font-bold mb-4">EIVC</h2>
           <p className="text-sm leading-relaxed">
-            Empowering Inclusion through Vocational Competence.  
+            Empowering Inclusion through Vocational Competence.
             Building a future where everyone has equal access to skills and opportunities.
           </p>
         </div>
@@ -31,8 +31,16 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-lg font-semibold mb-4">Contact Us</h3>
           <p className="text-sm">Kigali, Rwanda</p>
-          <p className="text-sm">Email: murokore1@gmail.com</p>
-          <p className="text-sm">Phone: +250 788 3025 12</p>
+          <p className="text-sm">
+            <a href="mailto:info@ecivcltd.com">
+              Email: info@ecivcltd.com
+            </a>
+          </p>
+          <p className="text-sm">
+            <a href="tel:+250788302512">
+              Phone: +250 788 3025 12
+            </a>
+          </p>
         </div>
 
         {/* Social Media */}

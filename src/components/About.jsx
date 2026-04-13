@@ -230,8 +230,9 @@ const About = () => {
                   </p>
                   <div className="flex items-center">
                     <div>
-                      <div className="font-body font-bold" style={{ color: colors.forestGreen }}>Murokore Eric</div>
-                      <div className="font-body text-sm" style={{ color: colors.charcoal }}>Founder & Director</div>
+                      <div className="font-title font-bold" style={{ color: colors.forestGreen }}>Murokore Eric</div>
+                      <div className="font-mono text-sm" style={{ color: colors.charcoal }}>Maj General Rtd.</div>
+                      <div className="font-body text-sm" style={{ color: colors.charcoal }}>Chief Executive Officer (CEO)</div>
                     </div>
                   </div>
                 </div>

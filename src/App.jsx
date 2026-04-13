@@ -25,12 +25,12 @@ export default function App() {
     return (
       <div style={{
         position: 'fixed', inset: 0,
-        backgroundColor: '#1B4332',
+        backgroundColor: '#FFFFF',
         display: 'flex', flexDirection: 'column',
         alignItems: 'center', justifyContent: 'center',
         gap: '20px'
       }}>
-        <img src="/logo.jpg" alt="ECIVC" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover' }} />
+        <img src="/logo.jpg" alt="ECIVC" style={{ width: 90, height: 130, borderRadius: '40%', objectFit: 'contain' }} />
         <div style={{
           width: 200, height: 4, backgroundColor: 'rgba(255,255,255,0.2)', borderRadius: 999, overflow: 'hidden'
         }}>
@@ -38,7 +38,7 @@ export default function App() {
             height: '100%', width: '40%',
             backgroundColor: '#FFC857',
             borderRadius: 999,
-            animation: 'slide 1.2s ease-in-out infinite'
+            animation: 'slide 1.6s ease-in-out infinite'
           }} />
         </div>
         <style>{`

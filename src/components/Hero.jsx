@@ -2,43 +2,6 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export default function Hero() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const image = new Image();
-    image.src = '/hero-bg.jpg';
-    image.onload = () => {
-      setLoading(false);
-    };
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="h-screen flex items-center justify-center bg-forest">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="text-center"
-        >
-          <div className="mb-8">
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-              className="w-16 h-16 border-4 border-amber border-t-transparent rounded-full"
-            />
-          </div>
-          <motion.h2
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="text-white text-xl font-heading"
-          >
-            ECIVC Loading...
-          </motion.h2>
-        </motion.div>
-      </div>
-    );
-  }
   return (
     <section
       id="home"
