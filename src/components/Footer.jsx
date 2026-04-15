@@ -9,7 +9,8 @@ const Footer = () => {
 
         {/* Logo & Description */}
         <div>
-          <h2 className="text-white text-2xl font-bold mb-4">EIVC</h2>
+          <h2 className="text-white text-2xl font-bold mb-2">E.C.I.V.C</h2>
+          <h3 className="text-white font-mono text-[9px] font-semibold mb-6">Environmental & Construction Innovation Value Chain</h3>
           <p className="text-sm leading-relaxed">
             Empowering Inclusion through Vocational Competence.
             Building a future where everyone has equal access to skills and opportunities.
@@ -57,7 +58,7 @@ const Footer = () => {
 
       {/* Bottom line */}
       <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} EIVC. All rights reserved.
+        © {new Date().getFullYear()} ECIVC. All rights reserved.
       </div>
     </footer>
   );
